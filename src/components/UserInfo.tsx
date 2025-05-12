@@ -2,6 +2,7 @@ import { UserName } from "./UserName.tsx";
 import { UserAvatar } from "./UserAvatar.tsx";
 import { UserEmail } from "./UserEmail.tsx";
 import { UserAge } from "./UserAge.tsx";
+import { Button } from './Button.tsx';
 import styled from "styled-components";
 
 type Props = {
@@ -11,6 +12,11 @@ type Props = {
   src: string;
 };
 export const UserInfo = (props: Props) => {
+
+
+
+const pressButton = () => alert('Botão Pressionado!')
+
   return (
     <div className={styleUserInfo}>
       <h1>Meu Primeiro Componente</h1>
@@ -25,7 +31,13 @@ export const UserInfo = (props: Props) => {
       </h3>
       <h3>
         Email: <UserEmail email={props.email} />
+
       </h3>
+
+      <>
+        <Button label="Test" onClick={pressButton} />
+      </>
+
     </div>
   );
 };

@@ -17,9 +17,6 @@ root.render(
         email="williansferr@gmail.com"
         src={Avatar}
       />
-      <App>
-
-      </App>
     </Card>
 
     
