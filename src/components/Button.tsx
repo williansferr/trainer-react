@@ -1,18 +1,17 @@
+
+
 type Props = {
-    label: string;
-    onClick: () => void
+    clicar: (Label: string) => void
 }
 
-// const clicaAlert = (v) => {
-//     alert("Clicou!!!")
-//   }
-
-export const Button = ({ label, onClick }: Props) => {
-    {/* <button onClick={ () => clicaAlert(props)}  >Botão com Função</button> */}
+export const Button = ({clicar}: Props) => {
+    const label = "Meu texto do botão"
     return (
 
-        <>
-            <button label={label} onClick={onclick} >Click</button>
-        </>
+        <button 
+            // onClick={clicar(label)}  
+            >
+            {label}
+        </button>
     )
 }
