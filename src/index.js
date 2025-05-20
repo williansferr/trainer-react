@@ -5,6 +5,8 @@ import { createRoot } from "react-dom/client";
 import { Card } from "./components/Card.tsx";
 import App from "./App.js";
 import Exercicio01 from "./components/Exercicio01.tsx";
+import Exercicio02 from "./components/Exercicio02.tsx";
+import Exercicio03 from "./components/Exercicio03.tsx";
 import { ContainerCenter } from './components/ContainerCenter.tsx'
 
 
@@ -14,7 +16,7 @@ root.render(
   <>
     <ContainerCenter
     >
-      <Exercicio01 />
+      <Exercicio03 />
 
     </ContainerCenter>
     {/* <Card> */}

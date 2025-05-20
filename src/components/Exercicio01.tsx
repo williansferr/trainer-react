@@ -13,6 +13,7 @@ function Exercicio01() {
 
     let [input, setInput] = useState(0)
 
+    //fila de contador
     const incrementaValor = () => {
         setInput(c => c + 3)
     }
