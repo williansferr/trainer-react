@@ -1,5 +1,6 @@
 import './App.css';
 import { MouseEvent, FormEvent, useState, ChangeEvent } from 'react'
+import { UseEffectExercicio06 } from './components/UseEffectExercicio06.tsx'
 // import { Card } from './components/Card.tsx'
 // import { UserName } from './components/UserName.tsx'
 
@@ -12,50 +13,68 @@ import { MouseEvent, FormEvent, useState, ChangeEvent } from 'react'
 
 function App() {
 
-  let [entrada, setEntrada] = useState('')
+  let [entrada, setEntrada] = useState(false)
 
-  const mudaEntrada = (e: ChangeEvent<HTMLInputElement>) => {
-    setEntrada(e.target.value);
-
-  }
-
-  // if (entrada != ''){
-  //   return(
-  //     <div>
-  //       Você já escreveu!
-  //     </div>
-  //   )
-
-  // }
+  const exibeRemoveComponenet = () => setEntrada(!entrada)
 
 
-  return (
-    <div>
 
-      {/* {loged && <div>Usuário Logado!</div>}
+
+
+// const mudaEntrada = (e: ChangeEvent<HTMLInputElement>) => {
+//   setEntrada(e.target.value);
+
+// }
+
+// if (entrada != ''){
+//   return(
+//     <div>
+//       Você já escreveu!
+//     </div>
+//   )
+
+// }
+
+
+// return (
+// <div>
+
+{/* {loged && <div>Usuário Logado!</div>}
       <button onClick={logarUsuario}>
       {loged ? 'Deslogar!' : 'Logado'}
       </button> */}
-      {entrada == '' ?
+{/* {entrada == '' ?
         <div>
-          <>
-            <input
-
-              value={entrada}
-              onChange={mudaEntrada}
-            />
-            <h2>{entrada}</h2>
-          </>
+        <>
+        <input
+        
+        value={entrada}
+        onChange={mudaEntrada}
+        />
+        <h2>{entrada}</h2>
+        </>
         </div>
         :
-
+        
         'Você já escreveu!'
-      }
+        } */}
 
 
-    </div>
 
-  )
+{/* </div> */ }
+
+// )
+//}
+
+return (
+  <>
+    <button onClick={exibeRemoveComponenet}>Elemento</button>
+
+    {entrada &&
+      <UseEffectExercicio06 />
+    }
+  </>
+)
 }
 
 export default App;

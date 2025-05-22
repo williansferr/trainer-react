@@ -6,7 +6,7 @@ import { Card } from "./components/Card.tsx";
 import App from "./App.js";
 import Exercicio01 from "./components/Exercicio01.tsx";
 import Exercicio02 from "./components/Exercicio02.tsx";
-import Exercicio03 from "./components/Exercicio03.tsx";
+import {UseEffectExercicio06} from "./components/UseEffectExercicio06.tsx";
 import { ContainerCenter } from './components/ContainerCenter.tsx'
 
 
@@ -14,10 +14,8 @@ const isLogado = false;
 const root = createRoot(document.getElementById("root"));
 root.render(
   <>
-    <ContainerCenter
-    >
-      <Exercicio03 />
-
+    <ContainerCenter>
+      <App />
     </ContainerCenter>
     {/* <Card> */}
     {/* <UserInfo
