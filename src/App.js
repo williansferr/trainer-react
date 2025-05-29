@@ -1,6 +1,7 @@
 import './App.css';
 import { MouseEvent, FormEvent, useState, ChangeEvent } from 'react'
 import { UseEffectExercicio06 } from './components/UseEffectExercicio06.tsx'
+import  {Exercicio07}  from './components/Exercicio07.tsx'
 // import { Card } from './components/Card.tsx'
 // import { UserName } from './components/UserName.tsx'
 
@@ -71,7 +72,7 @@ return (
     <button onClick={exibeRemoveComponenet}>Elemento</button>
 
     {entrada &&
-      <UseEffectExercicio06 />
+      <Exercicio07 />
     }
   </>
 )
